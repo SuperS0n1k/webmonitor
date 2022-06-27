@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<code id="demo">Fetch a file to change this text.</code>
+<script>
+
+let file = "https://scratch.mit.edu/messages/ajax/user-activity/?user=F_account&max=5"
+
+fetch (file)
+.then(x => x.text())
+.then(y => document.getElementById("demo").innerHTML = y);
+
+</script>
+</body>
+</html>
+
